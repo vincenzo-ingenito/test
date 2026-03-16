@@ -1,0 +1,247 @@
+<ClinicalDocument xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd" xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc">
+	<realmCode code="IT"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_MT000040UV02"/>
+	<templateId root="2.16.840.1.113883.2.9.10.1.13.1.1" extension="1.0"/>
+	<id root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.Q123E456" assigningAuthorityName="Regione Lazio"/>
+	<code code="60593-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Erogazione Farmaceutica"/>
+	<title>Erogazione Farmaceutica</title>
+	<effectiveTime value="20220417100000+0100"/>
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7 Confidentiality"/>
+	<languageCode code="it-IT"/>
+	<setId root="2.16.840.1.113883.2.9.2.120.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.DW322E34" assigningAuthorityName="Regione Lazio"/>
+	<versionNumber value="2"/>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<patientRole classCode="PAT">
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<addr use="HP"> 
+			    <country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00184</postalCode> 
+				<streetAddressLine>via Milano 7</streetAddressLine> 
+			</addr> 
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>Prova</family>
+					<given>Rossi</given>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Maschio" />
+				<birthTime value="19800329"/>
+				<birthplace classCode="BIRTHPL">
+					<place classCode="PLC" determinerCode="INSTANCE">
+						<addr>
+							<city>Cirie</city>
+							<censusTract>001086</censusTract>
+						</addr>
+					</place>
+				</birthplace>
+			</patient>
+		</patientRole>		
+	</recordTarget>
+	<author typeCode="AUT" contextControlCode="OP">
+		<time value="20220417093000+0100"/>
+		<assignedAuthor>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<addr use="HP"> 
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00184</postalCode> 
+				<streetAddressLine>via Milano 7</streetAddressLine> 
+			</addr> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/> 
+			<telecom use="WP" value="mailto:prova.provax@pec.it"/> 
+			<telecom use="MC" value="tel:3340000000"/>
+			<assignedPerson>
+				<name>
+					<family>Test</family>
+					<given>Matteo</given>
+					<prefix>Dott.</prefix>
+				</name>
+			</assignedPerson>
+			<representedOrganization classCode="ORG" determinerCode="INSTANCE">
+			    <id root="2.16.840.1.113883.2.9.4.1.2" extension="130106" assigningAuthorityName="Ministero della Salute"/>
+				<name>ASL3</name>
+				<telecom use="WP" value="mailto:matteo.cervone@gmail.it"/> 
+				<addr use="WP"> 
+					<country>100</country>
+					<state>120</state>
+					<county>RM</county> 
+					<city>Roma</city> 
+					<censusTract>058091</censusTract> 
+					<postalCode>00184</postalCode> 
+					<streetAddressLine>via Milano 7</streetAddressLine> 
+			    </addr> 
+            </representedOrganization>
+		</assignedAuthor>
+	</author>
+	<dataEnterer typeCode="ENT" contextControlCode="OP">
+		<time value="20220417093500+0100"/>
+		<assignedEntity classCode="ASSIGNED">
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<assignedPerson>
+				<name>
+					<family>Test</family>
+					<given>Pinca</given>					
+					<suffix>Segretaria</suffix>
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</dataEnterer>
+	<custodian typeCode="CST">
+		<assignedCustodian classCode="ASSIGNED">
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.2.9.4.1.2" extension="130106" assigningAuthorityName="Ministero della Salute"/>
+				<name>ASL Roma1</name>
+			</representedCustodianOrganization>	
+		</assignedCustodian>
+	</custodian>
+	<legalAuthenticator  typeCode="LA" contextControlCode="OP">
+		<time value="20220417093500+0100"/>
+		<signatureCode code="S"/>
+		<assignedEntity>
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/>
+			<assignedPerson>
+				<name>
+					<family>Test</family>
+					<given>Paola</given>	
+				</name>
+			</assignedPerson>
+		</assignedEntity>
+	</legalAuthenticator>
+	<authenticator typeCode="AUTHEN">
+		<time value="20220325110000+0100"/> 
+		<signatureCode code="S"/> 
+		<assignedEntity> 
+			<id root="2.16.840.1.113883.2.9.4.3.2" extension="PROVAX00X00X000Y" assigningAuthorityName="MEF"/> 
+			<addr use="WP"> 
+				<country>100</country>
+				<state>120</state>
+				<county>RM</county> 
+				<city>Roma</city> 
+				<censusTract>058091</censusTract> 
+				<postalCode>00164</postalCode> 
+				<streetAddressLine>Via Corvetto 3</streetAddressLine>
+			</addr> 
+			<telecom use="HP" value="mailto:prova.provax@gmail.it"/> 
+			<telecom use="MC" value="tel:3340000000"/> 
+			<assignedPerson> 
+				<name> 
+					<family>Test</family> 
+					<given>Roberta</given> 
+				</name> 
+			</assignedPerson>
+		</assignedEntity> 
+	</authenticator>
+	<participant typeCode="IND" contextControlCode="OP">
+		<functionCode code="MEDSOST" codeSystem= "2.16.840.1.113883.2.9.5.1.88"/>
+		<time value="20220320110000+0100"/> 	
+		<associatedEntity classCode="PROV">
+			<scopingOrganization classCode="ORG" determinerCode="INSTANCE">
+			    <id root="2.16.840.1.113883.2.9.4.1.2" extension="130106" assigningAuthorityName="Ministero della Salute"/>
+				<name>ASL Roma1</name>
+				<telecom use="WP" value="mailto:matteo.cervone@gmail.it"/> 
+				<addr use="WP"> 
+					<country>100</country>
+					<state>120</state>
+					<county>RM</county> 
+					<city>Roma</city> 
+					<censusTract>058091</censusTract> 
+					<postalCode>00184</postalCode> 
+					<streetAddressLine>via Milano 7</streetAddressLine> 
+			    </addr> 
+            </scopingOrganization>
+		</associatedEntity>
+	</participant>
+	<inFulfillmentOf>
+		<order classCode="ACT" moodCode="RQO">
+			<id root="2.16.840.1.113883.2.9.4.3.9" extension="[NRE]" assigningAuthorityName="MEF"/>
+			<priorityCode code="R" codeSystem="2.16.840.1.113883.5.7" codeSystemName="HL7 ActPriority" displayName="Normale"/>
+		</order>
+	</inFulfillmentOf>
+	<relatedDocument typeCode="RPLC">
+		<parentDocument>
+			<id root="2.16.840.1.113883.2.9.2.99.4.4" extension="030702.LCNLDE90L47H501Q.20220420112426.DW322E34" assigningAuthorityName="Regione Lazio"/>
+		</parentDocument>
+	</relatedDocument>	
+	<!--Body -->
+	<component>
+		<structuredBody moodCode="EVN" classCode="DOCBODY">
+			<component typeCode="COMP">
+				<section ID="SINGOLA_PRESTAZ" classCode="DOCSECT" moodCode="EVN">
+				    <templateId root="2.16.840.1.113883.3.1937.777.63.10.294"/>
+					<code code="60590-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Medication dispensed.brief Document"/>
+					<title>Erogazione Farmaceutica</title>
+					<text>
+						<list>
+							<item>
+								<content ID="FAR-1"></content>
+							</item>
+							<item>
+								<content ID="FAR-2"></content>
+							</item>	
+						</list>
+					</text>
+					<entry>
+                       <supply classCode="SPLY" moodCode="EVN">
+					     <templateId root="2.16.840.1.113883.3.1937.777.63.10.295"/>
+                            <effectiveTime xsi:type="IVL_TS">
+								<low value="20210707221122+0100"/>
+							</effectiveTime>
+						  <quantity value="2"/>
+						  <product>
+							  <manufacturedProduct>
+									<!--manufacturedLabeledDrug>
+										<name>xxx</name>
+									</manufacturedLabeledDrug-->
+									<manufacturedMaterial>
+									   <code code="037665015" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC" displayName="10 MG CAPSULE RIGIDE GASTRORESISTENTI 14 CAPSULE"/>
+									</manufacturedMaterial>
+							   </manufacturedProduct>
+						  </product>
+						  <entryRelationship  typeCode="COMP">
+						     <act classCode="ACT" moodCode="EVN">
+							    <templateId root="2.16.840.1.113883.3.1937.777.63.10.296"/>
+				<!--1-->				<code code="S" codeSystem="2.16.840.1.113883.3.1937.777.63.11.16" codeSystemName="FlagErogazione" displayName="codice AIC inserito nel campo rappresenta una sostituzione di farmaco"/>
+								 <!--Act_Erogazione -->
+								<entryRelationship  typeCode="RSON">
+								  <observation classCode="OBS" moodCode="EVN">
+								    <templateId root="2.16.840.1.113883.3.1937.777.63.10.297"/>
+				<!--2-->				<code code="1" codeSystem="2.16.840.1.113883.2.9.6.1.53" codeSystemName="Motivazione Sostituzione" displayName="Sostituzione etico con generico"/>
+								    <!--value xsi:type="ST"> XXX </value-->
+									  <!-- Farmaco Sostituito -->
+									  <entryRelationship typeCode="COMP">
+										  <substanceAdministration classCode="SBADM" moodCode="RQO">
+											<consumable typeCode="CSM">
+												<manufacturedProduct classCode="MANU">
+													<manufacturedMaterial>
+														<code code="023085020" codeSystem="2.16.840.1.113883.2.9.6.1.5" codeSystemName="AIC"  displayName="GASTROGRAFIN*SOLUZ. 100 ML"/>
+													</manufacturedMaterial>
+												</manufacturedProduct>
+											</consumable>
+										  </substanceAdministration>
+									  </entryRelationship>
+								  </observation>
+								</entryRelationship>
+							 </act>
+						  </entryRelationship>
+						   <!-- Obs_Regime Erogazione -->
+						   <entryRelationship typeCode="COMP">
+							   <observation classCode="OBS" moodCode="EVN">
+								   <templateId root="2.16.840.1.113883.3.1937.777.63.10.326"/>
+				<!--3-->			   <code code="2" codeSystem="2.16.840.1.113883.3.1937.777.63.11.25" codeSystemName="Regime Erogazione" displayName="Distribuzione per conto (Dpc)"/>
+							   </observation>
+						   </entryRelationship>
+					   </supply>
+				   </entry>
+				   
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
+	
